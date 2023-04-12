@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e6e6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/** CSS of title **/
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/** CSS of navigation **/
+nav {
+    /* margin: 100px auto 0; */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 8px;
+}
+
+.stickyTop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#topNavgation {
+   display: flex;
+   justify-content: flex-end;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    text-decoration: none;
+    text-align: center;
+    color:#FFE4E1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav p {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    text-decoration: none;
+    text-align: center;
+    color:#FFE4E1;
+    font-weight: bold;
+}
+
+#topNavgation a:nth-child(1) {
+    margin-right: 55px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#topNavgation a:nth-child(2) {
+    margin-right: 55px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#topNavgation a:nth-child(3) {
+    margin-right: 35px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#topNavgation a:nth-child(5) {
+    margin-right: 55px;
+    margin-left: 35px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#topNavgation a:nth-child(6) {
+    margin-right: 55px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#topNavgation a:nth-child(1):hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
+}
+
+#topNavgation a:nth-child(2):hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
+}
+
+#topNavgation a:nth-child(3):hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
+}
+
+#topNavgation a:nth-child(5):hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
+}
+#topNavgation a:nth-child(6):hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
+}
+
+/** CSS of p **/
+.introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 20% 10% 20% ;
+    margin-bottom: 50px;
+    border-bottom: black 2px solid;
+}
+
+.introContent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.introContent .content {
+    font-size: 24px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5% 5% 5% ;
+}
+
+.mainContent h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black 2px solid;
+    width: 200px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.serviceContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    width: 60%;
+    height: 350px;
+}
+
+.serviceContent .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.serviceContent .service .serviceItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceContent .serviceMid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.serviceContent .serviceMid .serviceItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tailleImg {
+    width: 75px;
+    height: 75px;
+}
+
+.tailleImg2 {
+    width: 100px;
+    height: 75px;
+}
+
+.serviceContent .service .serviceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentV2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.contentV1 img {
+    padding-right: 100px;  
+}
+
+.contentV2 img {
+    padding-left: 100px;
+    
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* .photoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0 5% 0 ;
+}
+
+.photoContent h2 {
+    font-size: 36px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.images img{
+    margin: 5px;
+}
+
+.content2_2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.content2_2 img {
+    margin: 5px;
+}
+ */
+
+/* V2 */
+.gallery {
+    position: relative;
+    min-height: 100vh;
+    background: #ddd;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.gallerys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallerys .gallery-image {
+    height: 300px;
+    width: 400px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow:  hidden;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    height: 100%;
+    width: 100%;
+    transition: .2s linear;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.1);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80%;
+    max-width: 1600px;
+    height: 90vh;
+    max-width: 800px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn {
+    opacity: 1;
+    transform: opacity .5s;
+    transition-delay: 1s;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.image-name {
+    opacity: 0;
+}
+
+.close-btn {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f00;
+    cursor: pointer;
+}
+
+.arrow-btn {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow-btn:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.index {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+}
+
+.large-image {
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0;
+}
+/* -------------------------------------------Contact----------------------------------------- */
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 10% 5% 10% ;
+}
+
+.contactContent h2 {
+    font-size: 36px;
+}
+
+.contactContent .content {
+    font-size: 24px;
+}
+
+.contactContent tr td:first-child {
+    padding-right: 20px;
+    width: 130px;
+}
+
+.contactContent tr td {
+    padding-top: 20px;
+}
+
+.serviceTop {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #FFE4E1;
+    background-color: rgb(32, 32, 32);
+}
+
+/* ===========================================Slider============================================ */
+.sliderContent {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23E3C9;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+/* css for manual slide navigation */
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -140%;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -160%;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -180%;
+}
+
+/* -------------------------------------------PROCESS----------------------------------------- */
+.processContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.processContent h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black 2px solid;
+    width: 200px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.Process {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.oneProcess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-right: 1px solid black;
+    padding-right: 1%;
+}
+
+.oneProcess:last-child {
+    border-right: none;
+    padding-right: none;
+}
+
+.oneProcess h3{
+    margin-top: 8%;
+    margin-bottom:8%;
+}
+
+.sepLine {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-bottom: 1px solid black;
+}
+
+/* -------------------------------------------FOOTER----------------------------------------- */
+.footerContainer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: rgb(32, 32, 32);
+    padding: 15px 0;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+    font-weight: 500;
+    position: relative;
+}
+
+.uls {
+    width: 100px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col ul li p {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li address {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* =========================================Responsive========================================== */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .photosContent .popup-photo img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }    
+}
