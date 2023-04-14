@@ -262,11 +262,18 @@ nav p {
     position: relative;
     min-height: 100vh;
     background: #ddd;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .gallery h2 {
     font-size: 36px;
     text-align: center;
+    border-bottom: 2px solid black;
+    width: 15%;
+    margin-bottom: 3%;
 }
 
 .gallerys {
@@ -416,6 +423,11 @@ nav p {
 
 .contactContent h2 {
     font-size: 36px;
+    width: 20%;
+    border-bottom: 2px solid black;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
 }
 
 .contactContent .content {
