@@ -303,8 +303,8 @@ nav p {
     transform: translate(-50%, -50%) scale(0);
     width: 80%;
     max-width: 1600px;
-    height: 90vh;
-    max-width: 800px;
+    height: 95vh;
+    max-width: 90vw;
     border-radius: 20px;
     background: rgba(0, 0, 0, .75);
     display: flex;
@@ -358,6 +358,12 @@ nav p {
     border-radius: 50%;
     background: #f00;
     cursor: pointer;
+}
+
+.close-btn p{
+    margin-top: -15px;
+    margin-left: 1px;
+    font-weight: 1000;
 }
 
 .arrow-btn {
@@ -442,7 +448,7 @@ nav p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #23E3C9;
+    /* background-color: #23E3C9; */
 }
 
 .slider {
@@ -482,7 +488,8 @@ nav p {
 }
 
 .manual-btn {
-    border: 2px solid #40D3DC;
+    /* border: 2px solid #40D3DC; */
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
