@@ -23,7 +23,7 @@ const images = [...document.querySelectorAll('.image')];
     const updateImage = (i) => {
         let path = `../photos/roofing_${i + 1}-min.jpg`;
         largeImage.src = path;
-        imageName.innerHTML = `photos_${i + 1}`;
+        imageName.innerHTML = `photo_${i + 1}`;
         imageIndex.innerHTML = `0${i + 1}`;
         index = i;
     }
