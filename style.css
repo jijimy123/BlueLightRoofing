@@ -121,41 +121,43 @@ nav p {
     border-bottom: #e91e63 3px solid;
 }
 
-/** CSS of p **/
-.cn_introContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2% 20% 10% 20%;
-    margin-bottom: 50px;
-    background-color: #ffffffb6;
+.langBtn {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(32, 32, 32);
+    color: #FFE4E1;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 50px;
 }
 
-.cn_introContent h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.langBtn:hover {
+    height: 40px;
+    border-bottom: #e91e63 3px solid;
 }
-
-.cn_introContent .content {
-    font-size: 24px;
-}
-/* ------------------------------------------ */
-.en_introContent {
+/* -------------------------------------------------------------------------------------------- */
+.introContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2% 20% 0 20% ;
     background-color: #ffffffb6;
     margin-bottom: 100px;
+    height: 472px;
 }
 
-.en_introContent h2 {
+.introContent h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.en_introContent .content {
-    font-size: 26px;
+.introContent .content {
+    font-size: 20px;
     margin-bottom: 50px;
 
 }
@@ -165,7 +167,7 @@ nav p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0% 5% 5% 5% ;
+    padding: 0% 5% 0% 5% ;
 }
 
 .mainContent h2 {
@@ -448,7 +450,16 @@ nav p {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #23E3C9; */
+    flex-direction: column;
+}
+
+.sliderContent h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black 2px solid;
+    width: 200px;
+    margin-bottom: 50px;
+    font-size: 36px;
 }
 
 .slider {
@@ -685,15 +696,11 @@ ul {
 
 /* =========================================Responsive========================================== */
 @media (max-width: 1500px) and (min-width: 768px){
-    .en_introContent {
+    .introContent {
         padding: 2% 10% 0 10%;
     }
 
-    .cn_introContent {
-        padding: 2% 10% 5% 10%;
-    }
-
-        .contactContent h2 {
+    .contactContent h2 {
         width: 40%;
     }
 }
@@ -703,12 +710,9 @@ ul {
         background-size: 100vw 8%;
     }
 
-    .en_introContent {
+    .introContent {
         padding: 20px;
-    }
-
-    .cn_introContent{
-        padding: 20px;
+        height: 750px;
     }
 
     .contactContent h2 {
@@ -721,6 +725,23 @@ ul {
 
     .serviceContent {
         width: 80%;
+    }
+
+    #topNavgation a:nth-child(1) {
+        margin-right: 40px;
+    }
+
+    #topNavgation a:nth-child(2) {
+        margin-right: 40px;
+    }
+
+    #topNavgation a:nth-child(3) {
+        margin-right: 40px;
+    }
+
+    .langBtn {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -757,12 +778,9 @@ ul {
         margin-right: 20px;
     }
 
-    .en_introContent {
+    .introContent {
         padding: 20px;
-    }
-
-    .cn_introContent{
-        padding: 20px;
+        height: 750px;
     }
 
     .footer-col {
@@ -807,6 +825,10 @@ ul {
     }
 
     .contactContent h2 {
+        width: 80%;
+    }
+
+    .gallery h2 {
         width: 80%;
     }
 

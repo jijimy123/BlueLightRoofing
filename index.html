@@ -23,16 +23,16 @@
     <nav>
         <div id="topNavgation">
             <a href="index.html">Home</a>
-            <a href="pages/en_photos.html">Photos</a>
-            <a href="pages/en_contact.html">Contact</a>
+            <a href="pages/photos.html">Photos</a>
+            <a href="pages/contact.html">Contact</a>
             <p> | </p>
-            <a href="pages/cn_index.html" class="cnButton">中文</a>
-            <a href="index.html" class="enButton">English</a>
+            <button onclick="changeLanguage('cn')" class="langBtn">中文</button>
+            <button onclick="changeLanguage('en')" class="langBtn">English</button>
         </div>
     </nav>
 
 <!-- =========================================CONTENT============================================= -->
-    <div class="en_introContent">
+    <div class="introContent">
         <h2>Welcome</h2>
         <div class="content">
             <p>
@@ -52,41 +52,41 @@
     <h2>Services</h2>
     <div class="serviceContent">
         <div class="service">
-            <div class="serviceItem">
+            <div class="serviceItem item1">
                 <img src="imgs/cottage.png" class="tailleImg" alt="">
                 <p>Renew</p>
             </div>
 
-            <div class="serviceItem">
+            <div class="serviceItem item2">
                 <img src="imgs/roll.png" class="tailleImg" alt="">
                 <p>Flat roofing</p>
             </div>
 
-            <div class="serviceItem">
+            <div class="serviceItem item3">
                 <img src="imgs/souffit.png" class="tailleImg" alt="">   
                 <p>Soffit vent</p>
             </div>
         </div>
         
         <div class="serviceMid">
-            <div class="serviceItem">
+            <div class="serviceItem item4">
                 <img src="imgs/photo_call.png" class="tailleImg" alt="">
                 <p>Free estimate</p>
             </div>
         </div>
 
         <div class="service">   
-            <div class="serviceItem">
+            <div class="serviceItem item5">
                 <img src="imgs/hammer.png" class="tailleImg" alt="">
                 <p>Maintenance</p>
             </div>
 
-            <div class="serviceItem">
+            <div class="serviceItem item6">
                 <img src="imgs/gutter.png" class="tailleImg" alt="">
                 <p>Gutter renew and clean</p>
             </div>
 
-            <div class="serviceItem">
+            <div class="serviceItem item7">
                 <img src="imgs/grass.png" class="tailleImg" alt="">  
                 <p>Landscaping service</p>
             </div>  
@@ -96,6 +96,7 @@
 
 <!-- =====================================SLIDER PHOTOS========================================== -->
 <div class="sliderContent">
+    <h2>Photos</h2>
     <div class="slider">
         <div class="slides">
             <!-- radio buttons -->
@@ -230,7 +231,7 @@
     </div>
 
     <div class="footer-col">
-        <h4>Eight years experience</h4>
+        <h4>Ten years experience</h4>
         <img src="imgs/experience.png" class="tailleImg2" alt="">
     </div>
 </div>
@@ -241,5 +242,124 @@
         <p>© Copyright 2023 - BlueLight Roofing Solutions. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- =========================================SCRIPT============================================= -->
+<script>
+    var home = document.querySelector("#topNavgation a:nth-child(1)");
+    var photos = document.querySelector("#topNavgation a:nth-child(2)");
+    var contact = document.querySelector("#topNavgation a:nth-child(3)");
+    var title = document.querySelector("title");
+    var navTitle = document.querySelector(".serviceTop");
+    var welcome = document.querySelector(".introContent h2");
+    var content = document.querySelector(".content");
+    var titleService = document.querySelector(".mainContent h2");
+    var renew = document.querySelector(".item1 p");
+    var flatroofing = document.querySelector(".item2 p");
+    var soffit = document.querySelector(".item3 p");
+    var estimate = document.querySelector(".item4 p");
+    var maintenance = document.querySelector(".item5 p");
+    var gutter = document.querySelector(".item6 p");
+    var landscaping = document.querySelector(".item7 p");
+    var titlePhotos = document.querySelector(".sliderContent h2");
+    var titleProcess = document.querySelector(".processContent h2");
+    var process1 = document.querySelector(".oneProcess:nth-child(1) h3");
+    var process2 = document.querySelector(".oneProcess:nth-child(2) h3");
+    var process3 = document.querySelector(".oneProcess:nth-child(3) h3");
+    var process4 = document.querySelector(".oneProcess:nth-child(4) h3");
+    var process5 = document.querySelector(".oneProcess:nth-child(5) h3");
+    var processP1 = document.querySelector(".oneProcess:nth-child(1) p");
+    var processP2 = document.querySelector(".oneProcess:nth-child(2) p");
+    var processP3 = document.querySelector(".oneProcess:nth-child(3) p");
+    var processP4 = document.querySelector(".oneProcess:nth-child(4) p");
+    var processP5 = document.querySelector(".oneProcess:nth-child(5) p");
+    var wsib = document.querySelector(".footer-col:nth-child(1) h4");
+    var liability = document.querySelector(".footer-col:nth-child(2) h4");
+    var warranty = document.querySelector(".footer-col:nth-child(3) h4");
+    var experience = document.querySelector(".footer-col:nth-child(4) h4");
+
+    function changeLanguage(lang) {
+    location.hash = lang;
+    location.reload();
+  }
+
+  var language = {
+    cn: {
+        home: "主页",
+        photos: "图片",
+        contact: "联系方式",
+        title: "主页 | BlueLight Roofing Solutions",
+        navTitle: "服务地区: Scarborough, Markham, Richmond hill, Vaughan, Ajax, Oshawa," +
+                    "North york, Mississauga, Brampton, Oakville, Burlington, Hamilton",
+        welcome: "欢迎",
+        content: "BlueLight Roofing Solutions 是一家一流的屋顶公司，一直以一流的屋顶服务社区多年的解决方案。 我们专注于提供广泛的屋顶服务，包括新屋顶安装，屋顶维修、屋顶更换和维护。" + 
+                "我们拥有一支训练有素、经验丰富的屋顶承包商团队他们致力于提供卓越的客户服务和工艺。" +
+                "我们的目标是确保我们的客户有一个耐用可靠的屋顶，可以承受任何天气条件。 在 BlueLight Roofing Solutions, " +
+                "我们只使用最好的质量屋顶材料，以确保我们的客户物有所值。 今天就联系我们，了解您的所有 " +
+                "屋面需求，让我们为您的家庭或企业提供完美的屋面解决方案。",
+        titleService: "服务范围",
+        renew: "翻新",
+        flatroofing: "平顶屋顶",
+        soffit: "拱腹通风口",
+        estimate: "免费估价",
+        maintenance: "维修、补漏",
+        gutter: "水槽更换、清理",
+        landscaping: "园艺服务",
+        titlePhotos: "图片",
+        titleProcess: "过程",
+        process1: "免费估价",
+        process2: "报价",
+        process3: "签署协议",
+        process4: "建造",
+        process5: "交货前检验",
+        processP1: "我们流程的第一步是安排免费估价。在此预约期间，我们的一位专家将访问您的物业以评估您的需求并讨论您对屋顶的愿景。",
+        processP2: "根据免费估价期间收集的信息，我们将为您提供所需服务的详细报价。此报价单将概述您的项目的工作范围、材料和预计时间表",
+        processP3: "一旦您审查并接受了报价，您将被要求签署一份合同，以正式确定您与我们公司之间的协议。",
+        processP4: "我们的团队将开始施工过程，与您密切合作，确保项目按照您的规格和时间表完成。",
+        processP5: "在完成项目之前，我们将进行交付前检查，以确保工作符合我们的高标准和您的期望。如果需要任何最终调整，我们将在此时进行。",
+        wsib: "W.S.I.B 保险",
+        liability: "屋顶保险",
+        warranty: "十五年保修",
+        experience: "十年经验"
+    }
+  };
+
+if (window.location.hash) {
+    if (window.location.hash == "#cn") {
+        home.textContent = language.cn.home;
+        photos.textContent = language.cn.photos;
+        contact.textContent = language.cn.contact;
+        title.textContent = language.cn.title;
+        navTitle.textContent = language.cn.navTitle;
+        welcome.textContent = language.cn.welcome;
+        content.textContent = language.cn.content;
+        titleService.textContent = language.cn.titleService;
+        renew.textContent = language.cn.renew;
+        flatroofing.textContent = language.cn.flatroofing;
+        soffit.textContent = language.cn.soffit;
+        estimate.textContent = language.cn.estimate;
+        maintenance.textContent = language.cn.maintenance;
+        gutter.textContent = language.cn.gutter;
+        landscaping.textContent = language.cn.landscaping;
+        titlePhotos.textContent = language.cn.titlePhotos;
+        titleProcess.textContent = language.cn.titleProcess;
+        process1.textContent = language.cn.process1;
+        process2.textContent = language.cn.process2;
+        process3.textContent = language.cn.process3;
+        process4.textContent = language.cn.process4;
+        process5.textContent = language.cn.process5;
+        processP1.textContent = language.cn.processP1;
+        processP2.textContent = language.cn.processP2;
+        processP3.textContent = language.cn.processP3;
+        processP4.textContent = language.cn.processP4;
+        processP5.textContent = language.cn.processP5;
+        wsib.textContent = language.cn.wsib;
+        liability.textContent = language.cn.liability;
+        warranty.textContent = language.cn.warranty;
+        experience.textContent = language.cn.experience;
+        
+    }
+}
+</script>
+
 </body>
 </html>

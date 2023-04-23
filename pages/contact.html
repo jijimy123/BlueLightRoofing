@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact | BlueLight Roofing Solutions</title>
+</head>
+<body id="contactBody">
+    <div class="serviceTop">
+        <p>
+            Service area:
+            Scarborough, Markham, Richmond hill, Vaughan, Ajax, Oshawa, 
+            North york, Mississauga, Brampton, Oakville, Burlington, Hamilton
+        </p>
+    </div>
+    <div class="title">
+        <img src="../imgs/logo.png" alt="">
+    </div>
+    <nav>
+        <div id="topNavgation">
+            <a href="../index.html">Home</a>
+            <a href="../pages/photos.html">Photos</a>
+            <a href="../pages/contact.html">Contact</a>
+            <p> | </p>
+            <button onclick="changeLanguage('cn')" class="langBtn">中文</button>
+            <button onclick="changeLanguage('en')" class="langBtn">English</button>
+        </div>
+    </nav>
+
+<!-- =========================================CONTENT============================================= -->
+    <div class="contactContent">
+        <h2>Reach Us</h2>
+        <div class="content">
+            <table>
+                <tr>
+                    <td class="td1">Service area:</td>
+                    <td>Scarborough, Markham, Richmond hill, Vaughan, Ajax, Oshawa, 
+                        North york, Mississauga, Brampton, Oakville, Burlington, Hamilton</td>
+                </tr>
+                <tr>
+                    <td class="td2">Email:</td>
+                    <td>bluelightroofing@gamil.com</td>
+                </tr>
+                <tr>
+                    <td class="td3">Phone:</td>
+                    <td>647-860-7222 - Shawn Dai - (English / Mandarin / Cantonese)</td>
+                </tr>
+                <tr>
+                    <td class="td4">Wechat:</td>
+                    <td>ShawnDaii</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!-- =========================================FOOTER============================================= -->
+<footer class="footer">
+    <div class="footerContainer">
+        <p>© Copyright 2023 - BlueLight Roofing Solutions. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- =========================================SCRIPT============================================= -->
+<script>
+    var home = document.querySelector("#topNavgation a:nth-child(1)");
+    var photos = document.querySelector("#topNavgation a:nth-child(2)");
+    var contact = document.querySelector("#topNavgation a:nth-child(3)");
+    var title = document.querySelector("title");
+    var navTitle = document.querySelector(".serviceTop");
+    var contactTitle = document.querySelector(".contactContent h2");  
+    var serviceArea = document.querySelector(".contactContent .td1");
+    var email = document.querySelector(".contactContent .td2");
+    var phone = document.querySelector(".contactContent .td3");
+    var wechat = document.querySelector(".contactContent .td4");
+
+    function changeLanguage(lang) {
+    location.hash = lang;
+    location.reload();
+  }
+
+  var language = {
+    cn: {
+        home: "主页",
+        photos: "图片",
+        contact: "联系方式",
+        title: "联系方式 | BlueLight Roofing Solutions",
+        navTitle: "服务地区: Scarborough, Markham, Richmond hill, Vaughan, Ajax, Oshawa," +
+                    "North york, Mississauga, Brampton, Oakville, Burlington, Hamilton",
+        contactTitle: "联系我们: ",
+        serviceArea: "服务地区: ",
+        email: "邮箱: ",
+        phone: "电话: ",
+        wechat: "微信: "
+    }
+  };
+
+if (window.location.hash) {
+    if (window.location.hash == "#cn") {
+        home.textContent = language.cn.home;
+        photos.textContent = language.cn.photos;
+        contact.textContent = language.cn.contact;
+        title.textContent = language.cn.title;
+        navTitle.textContent = language.cn.navTitle;
+        contactTitle.textContent = language.cn.contactTitle;
+        serviceArea.textContent = language.cn.serviceArea;
+        email.textContent = language.cn.email;
+        phone.textContent = language.cn.phone;
+        wechat.textContent = language.cn.wechat;
+    }
+}
+</script>
+
+</body>
+</html>
